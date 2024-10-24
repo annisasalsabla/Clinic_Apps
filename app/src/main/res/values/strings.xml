@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Clinic Apps</string>
 
+    <string name="menu_heart">Heart</string>
+    <string name="menu_dentist">Dentist</string>
+    <string name="menu_eye">Eye Specialist</string>
+
     <string name="already_have_account"><![CDATA[<font color="#A9A9A9">Already have an account?</font> <font color="#008000">Sign In</font>]]></string>
 
 </resources>

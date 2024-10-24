@@ -7,51 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".StarterPageActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
     <ImageView
-        android:id="@+id/imgDoctors"
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/splashscreen"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imgMenuIcon"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo2"
-        tools:ignore="MissingConstraints"
-        android:layout_marginTop="87dp" />
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            tools:ignore="MissingConstraints" />
     </RelativeLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="26dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="610sp"
-            android:fontFamily="@font/amaranth"
-            android:gravity="center"
+            android:layout_marginTop="600sp"
+            android:fontFamily="@font/afacad"
             android:text="Manage your Health and Happy Future"
-            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnStart"
+            android:id="@+id/btnget"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10sp"
-            android:backgroundTint="#18A980"
-            android:text="Get started" />
+            android:backgroundTint="#66C997"
+            android:text="Get Started" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

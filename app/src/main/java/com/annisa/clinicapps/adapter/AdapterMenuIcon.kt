@@ -1,5 +1,7 @@
 package com.annisa.clinicapps.adapter
 
+
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,7 +32,7 @@ class AdapterMenuIcon (
 
     override fun onBindViewHolder(holder: MyviewHolder, position: Int) {
         val currentItem = itemMenuList[position]
-        holder.imgMenuIcon.setImageResource(currentItem.icon)
+        holder.imgMenuIcon.setImageResource(currentItem.iconImage)
         holder.txtNamaMenu.setText(currentItem.iconName)
     }
 

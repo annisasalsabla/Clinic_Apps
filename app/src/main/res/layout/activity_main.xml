@@ -7,30 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <LinearLayout
-        android:id="@+id/font"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#DCD9D9"
+        android:background="#F6F6F6"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="290sp"
-            android:fontFamily="serif"
+            android:layout_marginTop="250sp"
+            android:fontFamily="@font/gilda_display"
             android:gravity="center"
-            android:text="Self Care"
-            android:textSize="34sp"
-
+            android:text="Self care"
+            android:textSize="34dp"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="85sp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15sp"
             app:srcCompat="@drawable/logo" />
 
@@ -40,7 +37,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="65sp"
             android:gravity="center"
-            android:text="Loading..."
-            android:textColor="#474545" />
+            android:text="Loading...."
+            android:textAlignment="center"
+            android:textColor="#BAB2B2"
+            android:textSize="18sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

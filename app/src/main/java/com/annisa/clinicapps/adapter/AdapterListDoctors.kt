@@ -1,13 +1,18 @@
 package com.annisa.clinicapps.adapter
 
+
+
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.annisa.clinicapps.DetailDoctorActivity
 import com.annisa.clinicapps.R
 import com.annisa.clinicapps.model.ModelListDoctors
+
 
 
 class AdapterListDoctors(
@@ -40,5 +45,20 @@ class AdapterListDoctors(
         holder.txtBidang.setText(currentItem.BidangDr)
         holder.txtTotalRating.setText(currentItem.totalRating)
         holder.txtTotalReview.setText(currentItem.totalReview)
+
+        holder.itemView.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, DetailDoctorActivity::class.java).apply {
+                // Mengirim data melalui intent
+                putExtra("namaDoctor", currentItem.NamaDr)
+                putExtra("photoDoctor", currentItem.ImageDr)
+                putExtra("ahli", currentItem.BidangDr)
+                putExtra("review", currentItem.totalReview)
+                putExtra("photoBintang", currentItem.ImageBintang)
+                putExtra("rating", currentItem.totalRating)
+
+            }
+            context.startActivity(intent)
+        }
     }
 }
